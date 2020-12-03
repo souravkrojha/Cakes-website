@@ -1,0 +1,46 @@
+{
+  "name": "cake_website",
+  "version": "1.0.0",
+  "description": "cake shopping website",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \" npm run client\" ",
+    "data:import": "node backend/seeder",
+    "data:destory": "node backend/seeder -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bughunter-99/Cakes-website.git"
+  },
+  "author": "Sourav Kumar Ojha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bughunter-99/Cakes-website/issues"
+  },
+  "homepage": "https://github.com/bughunter-99/Cakes-website#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.9",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "ngrok": "^3.3.0",
+    "razorpay": "^2.0.6",
+    "react-horizontal-scrolling-menu": "^0.7.8",
+    "react-modal-image": "^2.5.0",
+    "shortid": "^2.2.16",
+    "twilio": "^3.51.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
+  }
+}
